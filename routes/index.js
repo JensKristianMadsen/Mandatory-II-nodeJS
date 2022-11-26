@@ -70,6 +70,13 @@ router.get('/home', (req, res, next) =>{
   res.render('home', {message : 'Welcome, ' + req.session.email});
 });
 
+router.get('/logout',(req,res,next) => {
+if(req.session.email){
+  req.session.destroy();
+}
 
+res.redirect('/');
+
+})
 
 module.exports = router;
