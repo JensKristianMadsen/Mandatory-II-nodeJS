@@ -4,10 +4,11 @@ const mysql = require('mysql');
 const bcrypt = require('bcrypt');
 const coon = require('../database/coon');
 
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
 
-    res.render('index', { title: 'CodeLanguage'});
+    res.render('index', { title: 'CodeLanguage.'});
 
 });
 
